@@ -22,7 +22,6 @@ const handleUserInput = function(key) {
     process.exit();
   }
   // keys to move
-  console.log(key);
   if (key === 'w' || key === 'W') {
     connection.write("Move: up");
   }

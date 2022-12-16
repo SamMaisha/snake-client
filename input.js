@@ -13,7 +13,7 @@ const setupInput = function(conn) {
   stdin.on("data", handleUserInput);
 
   return stdin;
-}
+};
 
 // callback function to handle user input
 const handleUserInput = function(key) {
@@ -22,9 +22,9 @@ const handleUserInput = function(key) {
     process.exit();
   }
   // keys to move
+  console.log(key);
   if (key === 'w' || key === 'W') {
     connection.write("Move: up");
-
   }
   if (key === 'a' || key === 'A') {
     connection.write("Move: left");
@@ -46,6 +46,6 @@ const handleUserInput = function(key) {
     connection.write("Say: WEEE!!");
   }
 
-}
+};
 
 module.exports = { setupInput };

@@ -17,11 +17,14 @@ const setupInput = function(conn) {
 
 // callback function to handle user input
 const handleUserInput = function(key) {
+  // key to exit
   if (key === '\u0003') {
     process.exit();
   }
+  // keys to move
   if (key === 'w' || key === 'W') {
     connection.write("Move: up");
+
   }
   if (key === 'a' || key === 'A') {
     connection.write("Move: left");
@@ -31,6 +34,16 @@ const handleUserInput = function(key) {
   }
   if (key === "d" || key === 'D') {
     connection.write("Move: right");
+  }
+  // keys to speak
+  if (key === 'f' || key === 'F') {
+    connection.write("Say: U DED");
+  }
+  if (key === 'g' || key === 'G') {
+    connection.write("Say: BYEEE");
+  }
+  if (key === 'h' || key === 'H') {
+    connection.write("Say: WEEE!!");
   }
 
 }

@@ -17,15 +17,6 @@ const connect = function() {
 
     // give name to snake in the game
     conn.write("Name: SAM")
-    // setTimeout(() => {
-    //   conn.write("Move: up")
-    // }, 1000);
-    // setTimeout(() => {
-    //   conn.write("Move: up")
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up")
-    // }, 3000);
 
   })
 

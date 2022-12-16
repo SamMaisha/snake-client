@@ -14,6 +14,7 @@ const connect = function() {
   })
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
+
     // give name to snake in the game
     conn.write("Name: SAM")
     // setTimeout(() => {
@@ -27,7 +28,6 @@ const connect = function() {
     // }, 3000);
 
   })
-
 
   return conn;
 
